@@ -1,6 +1,9 @@
 import { useRouter } from "next/router"
 
-const ZPage = () => {
+ZPage.getInitialProps = function () {
+  return {}
+}
+function ZPage() {
   const router = useRouter()
   return <div className="ZPage">param: {router.query.param}</div>
 }
