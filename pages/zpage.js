@@ -1,8 +1,10 @@
-import { useRouter } from "next/router"
+import { useRouter } from "next/router";
 
 const ZPage = () => {
-  const router = useRouter()
-  return <div className="ZPage">param: {router.query.param}</div>
-}
+  const router = useRouter();
+  console.log(router.query.name);
 
-export default ZPage
+  return <div className="ZPage">param: {router.query.name}</div>;
+};
+
+export default ZPage;
